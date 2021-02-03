@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/furkanbezci/PersonelIzinWeb/static/css/main.13b298a8.chunk.css",
+    "main.js": "/furkanbezci/PersonelIzinWeb/static/js/main.66819dd3.chunk.js",
+    "main.js.map": "/furkanbezci/PersonelIzinWeb/static/js/main.66819dd3.chunk.js.map",
+    "runtime-main.js": "/furkanbezci/PersonelIzinWeb/static/js/runtime-main.a4fb7496.js",
+    "runtime-main.js.map": "/furkanbezci/PersonelIzinWeb/static/js/runtime-main.a4fb7496.js.map",
+    "static/css/2.ed890e5e.chunk.css": "/furkanbezci/PersonelIzinWeb/static/css/2.ed890e5e.chunk.css",
+    "static/js/2.940a60a0.chunk.js": "/furkanbezci/PersonelIzinWeb/static/js/2.940a60a0.chunk.js",
+    "static/js/2.940a60a0.chunk.js.map": "/furkanbezci/PersonelIzinWeb/static/js/2.940a60a0.chunk.js.map",
+    "index.html": "/furkanbezci/PersonelIzinWeb/index.html",
+    "precache-manifest.594ca3a321bcec2defc74acb5fce434e.js": "/furkanbezci/PersonelIzinWeb/precache-manifest.594ca3a321bcec2defc74acb5fce434e.js",
+    "service-worker.js": "/furkanbezci/PersonelIzinWeb/service-worker.js",
+    "static/css/2.ed890e5e.chunk.css.map": "/furkanbezci/PersonelIzinWeb/static/css/2.ed890e5e.chunk.css.map",
+    "static/css/main.13b298a8.chunk.css.map": "/furkanbezci/PersonelIzinWeb/static/css/main.13b298a8.chunk.css.map",
+    "static/js/2.940a60a0.chunk.js.LICENSE.txt": "/furkanbezci/PersonelIzinWeb/static/js/2.940a60a0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4fb7496.js",
+    "static/css/2.ed890e5e.chunk.css",
+    "static/js/2.940a60a0.chunk.js",
+    "static/css/main.13b298a8.chunk.css",
+    "static/js/main.66819dd3.chunk.js"
+  ]
+}
