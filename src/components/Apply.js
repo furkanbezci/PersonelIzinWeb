@@ -63,7 +63,7 @@ export class Apply extends Component {
     this.setState({ [event.target.name]: event.target.value });
 
 
-    var fark = this.calcBusinessDays(new Date(this.state.izinBaslangicTarihi), new Date(this.state.izinBitisTarihi));
+    var fark = this.calcBusinessDays(new Date(this.state.izinBaslangicTarihi), new Date(event.target.value));
     fark = parseInt(localStorage.getItem("kalanIzinGunSayisi")) - fark;
     if (fark)
       this.setState({ kalanIzinGunSayisi: fark });
@@ -103,7 +103,7 @@ export class Apply extends Component {
         {/* ekran 12 parçaya bölünmüş bu form sadece altınısı kullansın diye col-6 */}
         <div className="row">
           {this.state.kalanIzinGunSayisi < 0 && <div className="alert alert-danger col-md-12">Kalan İzin Gün Sayınız Yeterli Değildir</div>}
-          <div className="col-md-6">
+          <div className="col-md-8">
             <h2>Kalan İzin Sayısı {this.state.kalanIzinGunSayisi}</h2>
             <table className="table table-bordered">
               <thead>
@@ -111,6 +111,8 @@ export class Apply extends Component {
                   <th scope="col">#</th>
                   <th scope="col">İzin Baslangic Tarihi</th>
                   <th scope="col">İzin Bitiş Tarihi</th>
+                  <th scope="col">İzin Talep Tarihi</th>
+
                   <th scope="col">Durum</th>
                   <th scope="col">Red Sebebi</th>
                 </tr>
@@ -121,6 +123,8 @@ export class Apply extends Component {
                     <th scope="row">{s.id}</th>
                     <td>{s.izinBaslangicTarihi.split("T")[0]}</td>
                     <td>{s.izinBitisTarihi.split("T")[0]}</td>
+                    <td>{s.islemTarihi.split("T")[0]}</td>
+
                     <td>{s.durum == null ? "Bekliyor" : s.durum ? "Onaylandı" : "Red Edildi"}</td>
                     <td>{s.redSebebi}</td>
                   </tr>)
@@ -128,7 +132,7 @@ export class Apply extends Component {
               </tbody>
             </table>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
             <form className="col-md-12" onSubmit={this.kaydet}>
               <h2>İzin Talep Ekle</h2>
               <div className="form-group">

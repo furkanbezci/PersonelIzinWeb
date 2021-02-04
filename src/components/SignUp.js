@@ -20,13 +20,13 @@ export class SignUp extends Component {
     //sayfa yenilemeyi durdur
     event.preventDefault();
     // url e bu bilgileri post et json formatında
-    var result = await sendFetch( '/Yonetim/PersonelKayitOl',  JSON.stringify({
-        adi: this.state.adi,
-        soyadi: this.state.soyadi,
-        eposta: this.state.eposta,
-        sifre: this.state.sifre,
-        yoneticiKodu:null
-      }))
+    var result = await sendFetch('/Yonetim/PersonelKayitOl', JSON.stringify({
+      adi: this.state.adi,
+      soyadi: this.state.soyadi,
+      eposta: this.state.eposta,
+      sifre: this.state.sifre,
+      yoneticiKodu: null
+    }))
     //gelen verileri aldık
     console.log(result)
 
@@ -40,7 +40,7 @@ export class SignUp extends Component {
     localStorage.setItem("yoneticiKodu", result.yoneticiKodu)
 
     //anasayfaya yönlendir
-      this.props.history.push("/");
+    this.props.history.push("/");
 
   }
 
